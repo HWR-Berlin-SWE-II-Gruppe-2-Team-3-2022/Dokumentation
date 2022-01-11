@@ -1,0 +1,491 @@
+\documentclass[paper=a4, parskip=half]{scrreprt}
+
+\usepackage{etex}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+
+\usepackage{bibgerm} 
+\usepackage{cite}
+\usepackage{url}
+\usepackage{pdflscape}
+
+\usepackage{graphics}
+
+\usepackage[hypertexnames=false, linktocpage]{hyperref}
+
+\usepackage{titling}
+\usepackage{graphicx}
+\graphicspath{ {./Bilder/} }
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{setspace}
+\usepackage[acronym]{glossaries}
+\usepackage{datetime}
+
+\usepackage{subfiles} % Best loaded last in the preamble
+
+\subfile{Meta/glossary}
+
+\setcounter{tocdepth}{1}
+
+\begin{document}
+%TC:ignore
+\title{StakeholderAnalyse} % Meta
+
+\subfile{Meta/coversheet}
+\subfile{Meta/guides}
+
+\chapter{Motivation}
+Ziel dieses Dokuments ist es, die Charakteristika und Bedürfnisse der verschiedenen, am Projekt beteiligten Stakeholder*innen zu analysieren. Aus den Bedürfnissen sollen im Weiteren eindeutig formulierte Anforderungen gebildet werden, welche den Umfang, die Ziele sowie die Meilensteine im Entwicklungsprozess darstellen.
+Im Nachfolgenden wird deshalb zuerst definiert, wer als Stakeholder in Frage kommt, welche Eigenschaften jeweils beinhaltet sind, wie sich diese ggf. zusammenfassen lassen und wie mit Interessenskonflikten umgegangen werden kann.
+Zum Schluss wird dann ermittelt, wo mögliche Lücken in der Analyse vorhanden sind bzw. sein könnten und wie man diese durch Maßnahmen in der Zukunft verbessern kann.
+
+%TC:endignore
+\chapter{Wer oder was sind Stakeholder*innen?}
+Stakeholder[*innen] sind alle Personen oder Organisationen, die direkt oder indirekt Einfluss auf Anforderungen haben.
+Unter dem Begriff Stakeholder werden alle Personen zusammengefasst, die von der Systementwicklung  und  natürlich  auch  von  Einsatz  und  Betrieb  des  Produkts  betroffen  sind.
+Stakeholder*innen haben demnach ein begründetes Interesse an einem Produkt und deren Entwicklung.
+
+Als Stakeholder*in gilt auch, wer nicht unmittelbar an der Entwicklung beteiligt ist. Das entsprechend vorliegende, individuelle Interesse einzelner Stakeholder*innen lässt sich in Gruppen zusammenfassen und aufteilen. Dadurch entsteht ein klareres, kohärentes Bild aller Interessensgruppen.
+
+\vspace{0.5cm}
+Eine mögliche Aufteilung in Gruppen ist zum Beispiel:
+
+\begin{tabular}[h]{l|l}
+    \textbf{Gruppe} & \textbf{Interessensgrund} \\
+    \hline
+    Gesetzgeber*innen & Kontrollieren Einhaltung der Verordnungen und Gesetze\\
+    \hline
+    Product-Owner & Ansprechperson, Abnehmer des Produkts\\
+    \hline
+    Anwender*innen des Systems & Liefern fachliche Ziele\\
+    \hline
+	Entwickler*innen &  Treffen Entscheidung(en) über verwendete Technologien\\
+
+\end{tabular}
+
+\vspace{0.5cm}
+
+Die Analyse hat als Ziel, auf mehr als nur die größeren Gruppen der Stakeholder*innen einzugehen, weshalb nachfolgend bedeutsame Untergruppen herausgebildet werden. \\
+Während des Analyseprozesses sind mehrere, z.T. sehr unterschiedliche Nutzergruppen als potenzielle Zielgruppen in Frage gekommen. Im Projektrahmen und unter Berücksichtigung des verfügbaren Zeitbudgets wurde sich auf einen bestimmten Anwendungsbereich fokussiert. Das Projekt soll entsprechend ein Projektergebnis hervorbringen, dass auf diesen Anwendungsbereich im Speziellen, aber auch auf andere ermittelte Anwendungsbereiche im Allgemeineren fokussiert ist. \\
+Für die Analyse der Interessen der Stakeholder*innen gibt es verschiedene Konzepte, die angewendet werden können. Ein solches, recht weit verbreitetes Analysekonzept aus der agilen Softwareentwicklung ist das Konzept der Persona.
+
+\chapter{Das Konzept der Persona} \label{Das Konzept der Persona}
+% Buch mit in Literaturverzeichnis
+Alan Cooper gilt als Erfinder des Persona-Konzepts. Besonders populär wurde es nach der Veröffentlichung seines Buches "The Inmates Are Running the Asylum".\cite{Cooper} Das Werk sollte keine Anleitung darstellen, sondern behandelte in einem der Kapitel die Idee einer Persona als Werkzeug. 
+
+Das Konzept der Persona ist eine Methodik zur Verbesserung der Benutzererfahrung, welche wir im Folgenden in abgewandelter Form auf die Stakeholder*innen anwenden. Es galt entsprechend, eine fiktive Person, die sogenannte Persona,  zu erstellen \cite{PersonasMedium}.
+
+Die Proto-Persona sei eine unter bestimmten Voraussetzungen abgewandelte Version. Sie sei eine Persona, welche anhand der Intuition und Erfahrung eines Stakeholders bzw. einer Stakeholderin und dessen bzw. deren Erfahrungswerten erstellt wird. Der Hauptunterschied zwischen Proto-Persona und Persona sei vor allem in der mangelnden Hintergrundrecherche zu finden. \cite{PersonasNewmedia}
+
+Wir übertragen auch hier wieder das Konzept auf unseren Anwendungsfall und stellen fest, dass Teile der Analyse auf reinen Erfahrungswerten einer einzigen Gruppe von Stakeholder*innen, die der Entwickler*innen, und nicht Gesprächen mit den jeweiligen Stakeholder*innen selbst basieren.
+Aufgrund dessen wird im Folgenden das Konzept der Proto-Persona angewandt.
+Zukünftig kann diese Analyse noch durch Interviews erweitert werden.
+
+
+\newpage
+\section{Die Personas}
+Laut Copper ist es wichtig, nicht Hunderte, sondern nur ein paar wenige Persona zu erstellen und sich dabei auf die Ziele, Motivationen und Bedürfnisse der einzelnen zu konzentrieren. Bei Stakeholder*innen ist die Priorisierung im Falle von Interessensgegensätzen, begrenzten Ressourcen und Zeit besonders notwendig.
+
+Persona werden in der agilen Softwareentwicklung häufig auf kleinere Visitenkarten, einer PowerPoint-Folie oder Ähnlichem zusammengefasst und abgebildet. Im Nachfolgenden ist daher eine kurze Übersicht aller Persona mit ihren herausgearbeiteten Zielen, Motivationen, Bedürfnissen und einem kleinen beschreibenden Text dazu zu finden. Damit es nicht mehrfach zu gleichen Priorisierungen kommen kann, wird die nachfolgende Liste an Stakeholder*innen gemäß ihrer Priorisierung absteigend sortiert. Bei Interessenskonflikten wird also von oben nach unten entschieden.\\
+Die Priorisierung erfolgt nach Entscheidungskriterien aus dem Arbeitspapier ''Stakeholder-Management - Möglichkeiten des Umgangs mit Anspruchsgruppen'' von Theuvsen, Ludwig. \textbf{Diese Entscheidungskriterien sind: 1. Macht, 2. Legitimität und 3. Dringlichkeit} \cite{Theuvsen2001}.
+
+\subsection{Gesetzgeber*innen}
+\vspace{-0.5cm}\textit{Gesetzgeber*innen}
+
+Die Gesetzgeber*innen haben kein direktes Interesse am Produkt. Für sie ist wichtig, dass gegen keine Gesetze verstoßen wird. Die Bürger*innen sollten sich bei jeder ihrer Handlungen an die gesetzlichen Vorgaben halten, damit die Ordnung und die Sicherheit der Menschen in der Gesellschaft nicht gefährdet werden. Die Gesetzgeber*innen sind dazu befähigt, für die Einhaltung der Gesetze zu durchzusetzen, beispielsweise mit Hilfe der Polizei.
+
+Die Gesetzgeber*innen werden sowohl durch das Gesetzbuch, als auch durch die aktuelle Regierung und den Bundestag verkörpert.
+
+Da die Gesetzgeber*innen am meisten Macht besitzen, haben sie höchste Priorität und stehen an oberster Stelle.
+
+\vspace{0.5cm}
+
+\textbf{Ziele:} Gewährleistung der Sicherheit der Bürger, Einhaltung der Gesetze\\
+\textbf{Motivationen:} Wahrung der Ordnung und Schutz der Bürger\\
+\textbf{Bedürfnisse:} Problemloses Regieren\\
+\textbf{Anmerkungen:}\\
+
+\subsection{Betreuer*in der Hochschule}
+\vspace{-0.5cm}\textit{Product-Owner}
+
+Der Product-Owner ist die Person, die als Ansprechpartner*in und letztendlicher Abnehmer*in des Produkts den womöglich größten Einfluss auf das Endprodukt haben kann. So stellt sie genaue Ziele und Anforderungen. Die Bewertung des Endergebnisses findet ebenfalls durch den Product-Owner statt.
+
+Der Product-Owner wird, da es sich um ein Studienprojekt handelt, durch den jeweiligen Betreuer bzw. die jeweilige Betreuerin der Hochschule verkörpert.
+
+Bei \textsc{Genderly} im Konkreten gab es - noch vor der Idee für die Softwarelösung - die Anforderung, eines der 17 Sustainable Development Goals der United Nations \cite{UNGoals} zu erfüllen. Ebenso wurden Anforderungen zu Dokumentationsthemen und zeitliche Fristen vom Product-Owner gesetzt. Die Priorisierung an zweithöchster Stelle ist hier durch die Macht und Dringlichkeit zu begründen.
+
+\vspace{0.5cm}
+
+\textbf{Ziele:} Lauffähiges Produkt\\
+\textbf{Motivationen:} Lehren anhand eines realen Softwareprojekts\\
+\textbf{Bedürfnisse:} Erfüllung eines der 17 Sustainable Development Goals der United Nations\\
+\textbf{Anmerkungen:}\\
+
+\subsection{Student*innen}
+\vspace{-0.5cm}\textit{Anwender*innen des Systems}
+
+Im akademischen Raum gewinnt das Gendern deutlich und umfassend an Bedeutung. Es ist entsprechend davon auszugehen, dass es sich bei den Nutzer*innen daher sehr wahrscheinlich zu einem großen Anteil um Student*innen handeln wird, weshalb sich die Anwendung auch genau an dieser speziellen Zielgruppe besonders orientieren soll. Daraus begründet sich die Priorisierung mit der Legitimität. Das Produkt muss den Wünschen der Nutzer*innen entsprechen, ansonsten gibt es keine Nutzer*innen.\\
+
+
+\textbf{Ziele:} Einfaches und korrektes Gendern in wissenschaftlichen Texten \\
+\textbf{Motivationen:} Bessere Note, Arbeitserleichterung, weniger Fehler\\
+\textbf{Bedürfnisse:} Geringer Arbeitsaufwand\\
+\textbf{Anmerkungen:} Unmittelbare Zielgruppe\\
+
+\subsection{Dozent*innen}
+\vspace{-0.5cm}\textit{Anwender*innen des Systems}
+
+Auch in diesem Fall ist die Findung der Persona mit der zunehmenden Bedeutung im akademischen Raum zu begründen. Die Dozent*innen haben ein besonders hohes Interesse an der einfachen und flexiblen Anwendung des Produkts.
+Sie verfolgen dabei das Ziel ihren Lehrauftrag zu erfüllen, welcher auch die Vermittlung der Gleichberechtigung der Geschlechter beinhaltet\\
+
+\textbf{Ziele:} Einsatz im didaktischen und pädagogischen Zusammenhang\\
+\textbf{Motivationen:} Erfüllung des Lehrauftrags und mehr Gleichberechtigung\\
+\textbf{Bedürfnisse:} Einfache, flexible und mobile Anwendungsmöglichkeit\\
+\textbf{Anmerkungen:}\\
+
+\subsection{Scrum-Master}
+\vspace{-0.5cm}\textit{Entwickler*innen}
+
+Die Person des Scrum-Masters verfolgt das Ziel, einen reibunglosen und effizienten Arbeitsablauf in der Zusammenarbeit der Entwickler*innen zu schaffen.
+Aufgabenbereiche sind unter anderem die Koordination von Sprintzyklen und der Verteilung von Aufgaben aller Teammitglieder.
+
+\textbf{Ziele:} Einhalten der Abgabefrist, Reibungsloser stressarmer Arbeitsablauf\\
+\textbf{Motivationen:} Beauftragung durch Product-Owner\\
+\textbf{Bedürfnisse:} Eindeutige und rechtzeitige Kommunikation\\
+\textbf{Anmerkungen:} Ist in diesem Fall Mitglied der Entwickler*innen\\
+
+\subsection{Entwickler*innen}
+\vspace{-0.5cm}\textit{Entwickler*innen}
+
+Entwickler*innen verfolgen das Ziel, ein fertiges, reibungslos funktionierendes und vor allem lauffähiges Produkt zu schaffen, das Einsatz findet.
+Wichtig für die Entwickler*innen sind dafür klare, gut abgestimmte Anforderungen und Spezifikationen. Damit diese erfüllt werden, wird unter anderem die hiermit vorliegende Stakeholder-Analyse durchgeführt.
+
+\textbf{Ziele:} Reibungslose Entwicklung und Auslieferung der Software, Zukunftssicherung des Systems, Motivation in den Entwicklungsteams\\
+\textbf{Motivationen:} Beauftragung durch Product-Owner\\
+\textbf{Bedürfnisse:} Geringer Dokumentationsaufwand \\
+\textbf{Anmerkungen:}\\
+
+\subsection{Lehrkräfte \& Schüler*innen}
+\vspace{-0.5cm}\textit{Anwender*innen des Systems}
+
+Zu ihnen gibt zum jetzigen Zeitpunkt es keine direkte Kommunikation. Sie sind daher zu 100\% als Proto-Persona zu verstehen.
+Möglicherweise wird dieser Anwendergruppe zukünftig eine stärkere Bedeutung zugesprochen, wenn das Gendern mehr Verbreitung auch in niedrigeren Klassenstufen findet.\\
+Die Lehrkräfte haben ein besonders hohes Interesse an der einfachen und flexiblen Anwendung des Produkts. Sie verfolgen dabei das Ziel ihren Lehrauftrag zu erfüllen, welcher auch die Vermittlung der Gleichberechtigung der Geschlechter beinhaltet. Schüler*innen möchten gleichzeitig sehr leicht lernen. Besonders hervorzuheben ist hierbei das potenzielle Alter der Anwender*innen sowohl in das eine, als auch in das andere Extrem.\\
+
+\textbf{Ziele:} Nutzung der Software als Hilfsmittel während des Schreibens\\
+\textbf{Motivationen:} Erweiterung der Kenntnisse über genderneutrales Schreiben\\
+\textbf{Bedürfnisse:} Stark vereinfachte Bedienung\\
+\textbf{Anmerkungen:} Große Altersspanne (10-67)\\
+
+\subsection{Politiker*innen}
+\vspace{-0.5cm}\textit{Anwender*innen des Systems}
+
+In Teilen der Politik wird vermehrt Wert auf inklusives Schreiben gelegt.
+Das Ziel dabei ist es, dass sich dass Publikum besser angesprochen und stärker einbezogen fühlt.
+
+\textbf{Ziele:} Ansprechen von mehr Personen\\
+\textbf{Motivationen:} Politischer Wahlkampf \\
+\textbf{Bedürfnisse:} Erreichen einer möglichst großen Wählerschaft\\
+\textbf{Anmerkungen:}\\
+
+\subsection{Journalist*innen}
+\vspace{-0.5cm}\textit{Anwender*innen des Systems}
+
+In Teilen des Journalismus wird vermehrt Wert auf inklusives Schreiben gelegt.
+Das Ziel dabei ist es, dass sich mehr Leser*innen einbezogen und angesprochen fühlen.
+
+\textbf{Ziele:} Ansprechen von mehr Personen\\
+\textbf{Motivationen:} Mehr Reichweite durch Inklusion \\
+\textbf{Bedürfnisse:} Erreichen einer möglichst großen Leserschaft\\
+\textbf{Anmerkungen:}\\
+
+\section{Stakeholderliste in tabellerarischer Form}
+Im Nachfolgenden befindet sich auf Anfrage des Product-Owners die Aufarbeitung der Stakeholder*innen mit der Dokumentationsschablone nach Kleuker. Im Anhang befindet sich die Stakeholderliste in tabellarischer Form.
+
+
+\section{Dokumentationsschablone nach Kleuker}
+
+\subsection{Gesetzgeber*innen}
+\begin{tabular}
+	{
+	|p{0.3\textwidth}
+	|p{0.7\textwidth}
+	|
+	}
+	\hline
+	\textbf{Ziele}
+	&Schutz der Bevölkerung, Einhaltung der Gesetze\\
+	\hline
+	\textbf{Stakeholder}
+	&Gesetzgeber*innen \newline \textit{Gesetzgeber*innen}\\
+	\hline
+	\textbf{Auswirkungen auf Stakeholder}
+	&Gesetzlich verbindliche Rahmenbedingungen\\
+	\hline
+	\textbf{Randbedingungen}
+	&Bedingungslos\\
+	\hline
+	\textbf{Abhängigkeiten}
+	&Keine\\
+	\hline
+	\textbf{Sonstiges}
+	&Nur indirekt am Projekt beteiligt\\
+	\hline
+\end{tabular}
+
+\subsection{Betreuer*in der Hochschule}
+\begin{tabular}
+	{
+		|p{0.3\textwidth}
+		|p{0.7\textwidth}
+		|
+	}
+	\hline
+	\textbf{Ziele}
+	&Lauffähiges Produkt\\
+	\hline
+	\textbf{Stakeholder}
+	&Betreuer*in der Hochschule \newline \textit{Product-Owner}\\
+	\hline
+	\textbf{Auswirkungen auf Stakeholder}
+	&Hat am Ende ein lauffähiges Produkt vorliegen\\
+	\hline
+	\textbf{Randbedingungen}
+	&Einhaltung der zeitlichen Frist\\
+	\hline
+	\textbf{Abhängigkeiten}
+	&Keine\\
+	\hline
+	\textbf{Sonstiges}
+	&-\\
+	\hline
+\end{tabular}
+
+\subsection{Student*innen}
+\begin{tabular}
+	{
+	|p{0.3\textwidth}
+	|p{0.7\textwidth}
+	|
+	}
+	\hline
+	\textbf{Ziele}
+	&Einfaches und korrektes Gendern in wissenschaftlichen Texten\\
+	\hline
+	\textbf{Stakeholder}
+	&Student*innen
+	\newline \textit{Anwender*innen des Systems}\\
+	\hline
+	\textbf{Auswirkungen auf Stakeholder}
+	&Bessere Note, Arbeitserleichterung, Weniger Fehler\\
+	\hline
+	\textbf{Randbedingungen}
+	&Zugang über das Internet muss sicher sein\\
+	\hline
+	\textbf{Abhängigkeiten}
+	&Die Web-Anwendung muss betriebsbereit sein\\
+	\hline
+	\textbf{Sonstiges}
+	&-\\
+	\hline
+\end{tabular}
+
+\subsection{Dozent*innen}
+\begin{tabular}
+	{
+	|p{0.3\textwidth}
+	|p{0.7\textwidth}
+	|
+	}
+	\hline
+	\textbf{Ziele}
+	&Schreiben und Lehren wissenschaftlicher Texte mit geschlechtsneutraler Sprache\\
+	\hline
+	\textbf{Stakeholder}
+	&Dozent*innen
+	\newline \textit{Anwender*innen des Systems}\\
+	\hline
+	\textbf{Auswirkungen auf Stakeholder}
+	&Erfüllung des Lehrauftrags, Vermittlung der Gleichberechtigung der Geschlechter\\
+	\hline
+	\textbf{Randbedingungen}
+	&Zugang über das Internet muss sicher sein\\
+	\hline
+	\textbf{Abhängigkeiten}
+	&Die Web-Anwendung muss betriebsbereit sein\\
+	\hline
+	\textbf{Sonstiges}
+	&-\\
+	\hline
+\end{tabular}
+
+\subsection{Scrum-Master}
+\begin{tabular}
+	{
+	|p{0.3\textwidth}
+	|p{0.7\textwidth}
+	|
+	}
+	\hline
+	\textbf{Ziele}
+	&Eindeutige und rechtzeitige Kommunikation, Reibungsloser stressarmer Arbeitsablauf\\
+	\hline
+	\textbf{Stakeholder}
+	&Scrum-Master
+	\newline \textit{Entwickler*innen}\\
+	\hline
+	\textbf{Auswirkungen auf Stakeholder}
+	&Einhalten der Abgabefrist, Reibungsloser und effizienter Arbeitsablauf\\
+	\hline
+	\textbf{Randbedingungen}
+	&Keine\\
+	\hline
+	\textbf{Abhängigkeiten}
+	&Keine\\
+	\hline
+	\textbf{Sonstiges}
+	&Zuständig für Organisation der Mitglieder\\
+	\hline
+\end{tabular}
+
+\subsection{Entwickler*innen}
+\begin{tabular}
+	{
+	|p{0.3\textwidth}
+	|p{0.7\textwidth}
+	|
+	}
+	\hline
+	\textbf{Ziele}
+	&Entwicklung und Deployment der Software, Zukunftssicherung des Systems\\
+	\hline
+	\textbf{Stakeholder}
+	&Entwickler*innen
+	\newline \textit{Entwickler*innen}\\
+	\hline
+	\textbf{Auswirkungen auf Stakeholder}
+	&Hat am Ende ein lauffähiges Produkt vorliegen\\
+	\hline
+	\textbf{Randbedingungen}
+	&Benötigen klare, gut abgestimmte Anforderungen und Spezifikationen\\
+	\hline
+	\textbf{Abhängigkeiten}
+	&Keine\\
+	\hline
+	\textbf{Sonstiges}
+	&-\\
+	\hline
+\end{tabular}
+
+\subsection{Lehrkräfte \& Schüler*innen}
+\begin{tabular}
+	{
+	|p{0.3\textwidth}
+	|p{0.7\textwidth}
+	|
+	}
+	\hline
+	\textbf{Ziele}
+	&Nutzung der Software als Hilfsmittel während des Schreibens, Erweiterung der Kenntnisse über genderneutrales Schreiben\\
+	\hline
+	\textbf{Stakeholder}
+	&Lehrkräfte \& Schüler*innen
+	\newline \textit{Anwender*innen des Systems}\\
+	\hline
+	\textbf{Auswirkungen auf Stakeholder}
+	&Bessere Note, Arbeitserleichterung, Weniger Fehler\\
+	\hline
+	\textbf{Randbedingungen}
+	&Zugang über das Internet muss sicher sein\\
+	\hline
+	\textbf{Abhängigkeiten}
+	&Die Web-Anwendung muss betriebsbereit sein\\
+	\hline
+	\textbf{Sonstiges}
+	&-\\
+	\hline
+\end{tabular}
+
+\subsection{Politiker*innen}
+\begin{tabular}
+	{
+	|p{0.3\textwidth}
+	|p{0.7\textwidth}
+	|
+	}
+	\hline
+	\textbf{Ziele}
+	&Ansprechen von mehr Personen\\
+	\hline
+	\textbf{Stakeholder}
+	&Politiker*innen
+	\newline \textit{Anwender*innen des Systems}\\
+	\hline
+	\textbf{Auswirkungen auf Stakeholder}
+	&Erreichen einer möglichst großen Wählerschaft, Mehr Erfolg im politischem Wahlkampf\\
+	\hline
+	\textbf{Randbedingungen}
+	&Zugang über das Internet muss sicher sein\\
+	\hline
+	\textbf{Abhängigkeiten}
+	&Die Web-Anwendung muss betriebsbereit sein\\
+	\hline
+	\textbf{Sonstiges}
+	&-\\
+	\hline
+\end{tabular}
+
+\subsection{Journalist*innen}
+\begin{tabular}
+	{
+	|p{0.3\textwidth}
+	|p{0.7\textwidth}
+	|
+	}
+	\hline
+	\textbf{Ziele}
+	&Ansprechen von mehr Personen\\
+	\hline
+	\textbf{Stakeholder}
+	&Journalist*innen
+	\newline \textit{Anwender*innen des Systems}\\
+	\hline
+	\textbf{Auswirkungen auf Stakeholder}
+	&Mehr Reichweite durch Inklusion und erreichen einer möglichst großen Leserschaft\\
+	\hline
+	\textbf{Randbedingungen}
+	&Zugang über das Internet muss sicher sein\\
+	\hline
+	\textbf{Abhängigkeiten}
+	&Die Web-Anwendung muss betriebsbereit sein\\
+	\hline
+	\textbf{Sonstiges}
+	&-\\
+	\hline
+\end{tabular}
+
+\chapter{Ausblick}
+Diese erste Form der Stakeholder Analyse hat bereits einige Interessensgruppen herausgebildet und Priorisierungen in Entscheidungen klar definiert.
+Wie bereits in \ref{Das Konzept der Persona} Das Konzept der Persona erwähnt kann die Stakeholder Analyse durch Interviews mit verschiedenen Stakeholder*innen erweitert werden. Dadurch sollen Anforderungen klarer definiert und Bedürfnisse besser abgedeckt werden können. Interviews und Umfragen sind bereits geplant und befinden sich in Arbeit. 
+
+
+%TC:ignore
+
+%Glossar
+\printglossary
+\pagebreak
+
+\nocite{*}
+\bibliography{Literatur}
+\bibliographystyle{alphadin}
+
+
+\subfile{Anhang/main}
+%TC:endignore
+
+\end{document}
