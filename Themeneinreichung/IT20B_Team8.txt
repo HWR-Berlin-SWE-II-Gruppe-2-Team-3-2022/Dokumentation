@@ -26,3 +26,14 @@ Kurzbeschreibung
 Genderly 2.0 ist die Weiterentwicklung von Genderly, 
 einer Web App zur Texterfassung, -analyse und automatischen 
 Generierung eines genderneutralen Vorschlagstexts.
+
+
+Geplante Weiterentwicklungen
+----------------------------
+
+> Text soll in deutscher oder in englischer Sprache 
+  aufgenommen/verarbeitet werden
+> Eine (bisher angedachte) manuelle Auswahl der Sprache
+  in der UI soll in automatisierter Form realisiert werden
+> Erkennung von evtl. auszutauschenden Wörtern soll
+  über das unmittelbare Substantiv-Umfeld hinausgehen
