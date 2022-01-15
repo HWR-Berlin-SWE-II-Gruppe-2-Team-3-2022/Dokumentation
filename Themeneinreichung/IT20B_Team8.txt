@@ -18,3 +18,11 @@ Teammitglieder
 Felix Jacobsen    (651765),
 Dennis Podkolsin  (691468),
 Marcus Koppelmann (606150)
+
+
+Kurzbeschreibung
+----------------
+
+Genderly 2.0 ist die Weiterentwicklung von Genderly, 
+einer Web App zur Texterfassung, -analyse und automatischen 
+Generierung eines genderneutralen Vorschlagstexts.
