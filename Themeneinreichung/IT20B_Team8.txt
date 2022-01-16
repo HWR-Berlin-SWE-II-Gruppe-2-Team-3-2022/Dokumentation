@@ -7,8 +7,6 @@ Genderly 2.0
 Teammitglieder
 --------------
 
-Team Nr. 8
-
 Felix Jacobsen    (651765),
 Dennis Podkolsin  (691468),
 Marcus Koppelmann (606150)
