@@ -14,7 +14,7 @@ By contributing, you assert that:
 ## How to Contribute
 
 ### Where to find open issues
-Generally you can find and work on open issues [here](https://github.com/HWR-Berlin-SWE-I-Gruppe-2-Team-3-2021/Dokumentation/issues)
+Generally you can find and work on open issues [here](https://github.com/HWR-Berlin-SWE-II-Gruppe-2-Team-3-2022/Dokumentation/issues)
 
 If something is on the issues list with the 'Up For Grabs' label or no one is asigned yet you can feel free to work on it. You should comment that you are signing up for it on the issue so someone else doesn't also sign up for the work.
 
@@ -51,7 +51,7 @@ Prerequisites:
 
 Submitting PR:
 
-Create a pull request(PR) of you branch against the develop branch.
+Create a pull request (PR) of you branch against the develop branch.
 The PR should be ready to merge, otherwise mark it as a draft.
 Creating draft PRs help understanding you progress and means feedback can be given sooner. Waiting until you are ready may mean more changes than you are
 interested in if the changes are taking things in a direction the maintainers do not want to go.
