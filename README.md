@@ -1,14 +1,15 @@
 
-![screenshot](Assets/Images/Logo.png)
+<p align="center">
+<img src="Assets/Images/Logo.png" alt="Equaly Logo" height="200">
+</p>
 
-<p align="center" style="width: 400px">
+<p align="center">
 <b>Equaly is a Web-App for generating gender-neutral alternatives to given texts. </b><br>
 It takes in syntactically correct, german or english text. Based on that it generates a proposal for a gender-neutral rephrasing of said text.
 </p>
 
 # Contribution
-Pull request are very welcome, please open an issue in advance.
-
+Pull requests are very welcome, please open an issue in advance.
 Please check out our [Contribution Guidelines](./CONTRIBUTING.md) and [Code of Conduct](./CODE_OF_CONDUCT.md) before creating a pull request.
 
 # Support
