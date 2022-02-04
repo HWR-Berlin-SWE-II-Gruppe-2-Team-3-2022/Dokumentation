@@ -1,7 +1,7 @@
 
 ![screenshot](Assets/Images/Logo.png)
 
-<p align="center">
+<p align="center" style="width: 400px">
 <b>Equaly is a Web-App for generating gender-neutral alternatives to given texts. </b><br>
 It takes in syntactically correct, german or english text. Based on that it generates a proposal for a gender-neutral rephrasing of said text.
 </p>
