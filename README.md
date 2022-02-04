@@ -1,8 +1,6 @@
-
 <p align="center">
 <img src="https://user-images.githubusercontent.com/29037335/152511521-96842fd9-d5bd-4c3d-b1ca-07acf8205d89.png" alt="Equaly Logo" height="200">
 </p>
-
 
 <p align="center">
 <b>Equaly is a Web-App for generating gender-neutral alternatives to given texts. </b><br>
@@ -17,7 +15,6 @@ Please check out our [Contribution Guidelines](./CONTRIBUTING.md) and [Code of C
 If you need any help check out our [Support](./SUPPORT.md) file.
 
 # Security
-
 Have you found a security issue? a vulnerability? or simply have some concerns?
 Checkout our [Security file](./SECURITY.md) to see how you can report them safely.
 
