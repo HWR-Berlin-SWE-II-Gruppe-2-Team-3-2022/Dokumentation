@@ -1648,9 +1648,9 @@
 \def\contentsname{Contents}
 \def\listfigurename{List of Figures}
 \def\listtablename{List of Tables}
-\def\refname{References}
+\def\refname{Quellen}
 \def\indexname{Index}
-\def\figurename{Fig.}
+\def\figurename{Abb.}
 \def\tablename{TABLE}
 \@IEEEcompsocconfonly{\def\figurename{Figure}\def\tablename{Table}}
 \def\partname{Part}
