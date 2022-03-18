@@ -1,0 +1,22 @@
+\section{Qualitätssicherung und Beta-Testing}
+\label{sec:qualitätssicherung}
+%Dennis
+
+Durch die steigende Komplexität der Equaly Software ist es nötig diverse Aspekte der Anwendung ausführlich zu testen. Dazu wurden verschiedene Ansätze verfolgt.
+
+
+\subsection{Unit Testing}
+
+%''Eine Unit ist der kleinste separat testbare Abschnitt im Quelltext. Das kann eine Definition, eine Methode oder auch eine Klasse sein. [...] Ein einfachster Unit Test ruft eine definierte Funktion mit vorgegebenen Parametern auf und vergleicht das erzielte Ergebnis mit der vorgegebenen Erwartung.''
+
+Als Units werden die kleinstmöglichen Sinnabschnitte eines Quelltextes bezeichnet. Sie können Klassen, Methoden oder Definitionen sein. Die simpelste Form eines Unit-Tests besteht darin, eine definierte Methode mit bestimmten, festgelegten Parametern aufzurufen und ihr Ergebnis mit einem Erwartungswert abzugleichen \cite{Hub16}.
+
+Das Backend von Equaly wurde mit der Programmiersprache Java entwickelt. Um nun das Testen der Klassen und Methoden zu realisieren, wurde das Framework JUnit aufgrund von Vorerfahrung verwendet. JUnit erlaubt das Definieren und Ausführen von Unittests. Dazu werden speziell für das Testen entsprechende Klassen mit Testmethoden angelegt. Unter Einsatz des Kommandos ``assert'' kann innerhalb einer solchen Methode ein, durch die Komponente erarbeitetes, ``Ist'' mit einem vordefinierten ``Soll'' verglichen werden.
+
+
+\subsection{BETA-Tests}
+
+Im Rahmen des Moduls ``Software Engineering II'' wurde ein BETA-Test Event durchgeführt. Ziel dieser Veranstaltung war es, den Student*innen zu ermöglichen, in einem begrenzten Zeitfenster eine funktionsfähige BETA-Version ihrer Software den restlichen Studierenden des Jahrgangs zur Verfügung zu stellen und Feedback zu erfragen. Während des vorgeschriebenen Zeitfensters wurde die Equaly-BETA über den Hostinganbieter ``Heroku'' verfügbar gemacht. Die BETA-Tester waren in der Lage sich mit Equaly zu verbinden und beliebige Eingaben zu tätigen. Daraufhin wurden sie gebeten entweder über einen Audio Chat mit dem Team in Kontakt zu treten oder ihr Feedback mit Hilfe eines vorbereiteten Google Forms Fragebogens zu geben. Nach dem Abschluss des BETA-Test Events konnte das gesammelte Feedback schnellstmöglich in die nächste Equaly Version eingebaut werden.
+
+%Quali: Tests (in der Software//Was u. Warum//Why MVC cool?), Anwendungstests
+%Beta-Testing: das Beta-Test Event
